@@ -1,8 +1,7 @@
 sculpin_content_types:
-  players:
+  members:
     type: path
-    path: _players
-    singular_name: player
-    layout: player
-    enabled: true
-    permalink: player/:filename
+    permalink: members/:filename/
+    layout: "member.html.twig"
+  posts:
+    permalink: posts/:year/:month/:day/:filename/

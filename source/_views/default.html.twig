@@ -31,7 +31,7 @@
     <body>
     <nav>
         <div class="pure-menu pure-menu-open pure-menu-horizontal home-menu">
-            <a class="pure-menu-heading" href="{{ site.url }}">{{ site.tag }}</a>
+            <a class="pure-menu-heading" href="{{ site.url }}/">{{ site.tag }}</a>
             <ul>
                 <li><a href="/roster">Roster</a></li>
             </ul>
@@ -55,12 +55,11 @@
                 </nav>
             {% endif %}
         </div>
-        <div class="footer l-box is-centered">&copy; Troy Pavlek 2014</div>
+        <div class="footer l-box is-centered">&copy; SC2CTL 2014</div>
     </div>
 
     {% block scripts %}
     {% endblock %}
-    <script src="{{ site.url }}/js/prism.js"></script>
 
     {% if site.google_analytics_tracking_id %}
 

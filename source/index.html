@@ -1,6 +1,31 @@
 ---
 layout: default
 title: Home
+generator: pagination
+use:
+    - members
 ---
-
-        Help pls
+<div class="pure-g">
+    <div class="pure-u-2-3 frontpage-blog">
+        {% for post in page.pagination.items %}
+        <article>
+            {{ post.title }} Item
+            {% set post_array = post.blocks.content|split("<!-- MORE -->") %}
+            {% set summary = post_array[0] %}
+            {{ summary|raw }}
+            {% if post_array[1] is defined %}
+            <nav>
+                <a href="{{site.url}}{{post.url}}" class="pure-button">View More</a>
+            </nav>
+            {% else %}
+            View post
+            {% endif %}
+        </article>
+        {% endfor %}
+    </div>
+    <div class="pure-u-1-3">
+        <h2>Past Matches</h2>
+        <h2>Roster</h2>
+            {% include 'member_list.html' %}
+    </div>
+</div>

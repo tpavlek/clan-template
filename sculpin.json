@@ -11,5 +11,8 @@
     ],
     "config": {
         "component-dir": "source/components"
+    },
+    "require": {
+        "sculpin/sculpin": "dev-master"
     }
 }

@@ -1,0 +1,11 @@
+---
+layout: default
+title: Roster
+generator: pagination
+use:
+    - members
+---
+
+{% for member in page.pagination.items %}
+    {{ member.name }} Item
+{% endfor %}

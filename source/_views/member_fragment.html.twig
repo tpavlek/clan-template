@@ -1,0 +1,16 @@
+<a href="{{ site.url }}{{ member.url }}">
+    <div class="member">
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                {% if member.img %}
+                    <img src="/img/members/{{ member.name }}.png" />
+                {% endif %}
+            </div>
+            <div class="pure-u-1-2">
+                [{{ site.tag }}] {{ member.name }}
+                {{ member.blocks.content|raw }}
+            </div>
+        </div>
+
+    </div>
+</a>

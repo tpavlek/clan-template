@@ -1,0 +1,11 @@
+{% for member in data.members %}
+    {% if loop.index0 < site.members_frontpage %}
+        {% include 'member_fragment.html.twig' with {'member': member} %}
+    {% else %}
+        <nav class="is-centered">
+            <a href="{{site.url}}/roster" class="pure-button">
+                View More
+            </a>
+        </nav>
+    {% endif %}
+{% endfor %}
