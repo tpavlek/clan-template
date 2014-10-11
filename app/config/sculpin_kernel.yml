@@ -1,0 +1,8 @@
+sculpin_content_types:
+  players:
+    type: path
+    path: _players
+    singular_name: player
+    layout: player
+    enabled: true
+    permalink: player/:filename

@@ -1,0 +1,15 @@
+{
+    "name": "sc2ctl/clan-template",
+    "description": "A template site for a Starcraft Clan",
+    "license": "MIT",
+    "author": [
+        {
+            "name": "Troy Pavlek",
+            "email": "troy@depotwarehouse.net",
+            "homepage": "http://tpavlek.me"
+        }
+    ],
+    "config": {
+        "component-dir": "source/components"
+    }
+}
